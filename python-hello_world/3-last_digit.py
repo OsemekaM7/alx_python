@@ -9,4 +9,4 @@ elif last_digit > 5:
     output = "and is greater than 5"
 else:
     output = "and is less than 6 and not 0"
-print("Last digit of {} is {} and {}".format(number, last_digit, output), end="\n")
+print("Last digit of {} is {} {}".format(number, last_digit, output), end="\n")
