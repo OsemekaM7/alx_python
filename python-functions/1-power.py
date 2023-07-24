@@ -1,2 +1,3 @@
 def pow(a,b):
-    return pow(a,b)
+    return(a**b)
+print(pow(2,3))
