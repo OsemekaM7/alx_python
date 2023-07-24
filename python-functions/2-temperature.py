@@ -6,4 +6,3 @@ def convert_to_celsius(fahrenheit):
         return 273.15
     else:
         return celcius
-print (convert_to_celsius(-459.67))
