@@ -1,7 +1,7 @@
 def fibonacci_sequence(n):
     sequence = []
     if n == 0:
-        return([n])
+        return([])
     elif n < 2:
         return([0])
     else:
