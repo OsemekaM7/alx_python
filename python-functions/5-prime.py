@@ -5,7 +5,7 @@ def is_prime(number):
         return False
     elif number == 2 or 3:
         return True
-    elif n and m == 0:
+    elif n == 0 and m == 0:
         return True
     else:
         return False
