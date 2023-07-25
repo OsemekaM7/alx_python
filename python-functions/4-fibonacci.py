@@ -3,7 +3,7 @@ def fibonacci_sequence(n):
     if n == 0:
         return([])
     elif n < 2:
-        return([0])
+        return([])
     else:
         (sequence.append(0))
         (sequence.append(1))
