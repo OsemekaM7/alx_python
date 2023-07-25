@@ -8,4 +8,3 @@ def fibonacci_sequence(n):
         while len(sequence) < n:
             (sequence.append(sequence[-1] + sequence[-2]))
         return sequence
-print(fibonacci_sequence(20))
