@@ -1,0 +1,11 @@
+def is_prime(number):
+    n = (number - 1) % 6
+    m = (number + 1) % 6
+    if number == (2 or 3):
+        return True
+    elif n and m == 0:
+        return True
+    else:
+        return False
+
+print(is_prime(26))
