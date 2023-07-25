@@ -7,5 +7,3 @@ def is_prime(number):
         return True
     else:
         return False
-
-print(is_prime(26))
