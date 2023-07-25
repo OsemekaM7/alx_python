@@ -7,4 +7,5 @@ def fibonacci_sequence(n):
         (sequence.append(1))
         while len(sequence) < n:
             (sequence.append(sequence[-1] + sequence[-2]))
-        return sequence
+        
+    return sequence
