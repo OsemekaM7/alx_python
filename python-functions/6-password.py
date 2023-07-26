@@ -1,0 +1,23 @@
+def validate_password(password):
+    # Check if the password has at least 8 characters
+    if len(password) < 8:
+        return False
+
+    # Check if the password contains at least one number
+    if not any(char.isdigit() for char in password):
+        return False
+
+    # Check if the password contains at least one uppercase letter
+    if not any(char.isupper() for char in password):
+        return False
+
+    # Check if the password contains at least one lowercase letter
+    if not any(char.islower() for char in password):
+        return False
+
+    # Check if the password contains no spaces
+    if ' ' in password:
+        return False
+
+    # If all checks pass, the password is valid
+    return True
