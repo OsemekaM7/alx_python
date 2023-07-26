@@ -6,4 +6,4 @@ def is_prime(number):
     elif n or m  == 0:
         return True
     else:
-        return True
+        return False
