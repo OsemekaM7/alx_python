@@ -8,7 +8,7 @@ def safe_print_division(a, b):
         print("An error occurred:", e)
         return None
     finally:
-        print("Inside result:", result if 'result' in locals() else "None")
+        print("Inside result: {}".format(result) if 'result' in locals() else "None")
 
     return result
 
