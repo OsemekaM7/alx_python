@@ -7,8 +7,12 @@ def main():
     if num_args == 0:
         print("0 arguments")
         print(".")
+    elif num_args == 1:
+        print("{} argument:".format(num_args))
+        for idx, arg in enumerate(args, start=1):
+            print("{}: {}".format(idx, arg))
     else:
-        print("{} arguments.".format(num_args))
+        print("{} arguments:".format(num_args))
         for idx, arg in enumerate(args, start=1):
             print("{}: {}".format(idx, arg))
 
