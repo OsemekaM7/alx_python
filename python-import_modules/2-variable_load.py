@@ -1,12 +1,12 @@
-import importlib.util
+import importlib.machinery
 
 def main():
-    spec = importlib.util.spec_from_file_location("variable_load_2", "variable_load_2.py")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
+    loader = importlib.machinery.SourceFileLoader("variable_load_2", "variable_load_2.py")
+    module = loader.load_module()
     
     if hasattr(module, 'a'):
-        print(module.a)
+        a_value = getattr(module, 'a')
+        print(a_value)
     else:
         print("'a' not found in the imported module")
 
