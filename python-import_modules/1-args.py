@@ -5,8 +5,7 @@ def main():
     args = sys.argv[1:]
 
     if num_args == 0:
-        print("0 arguments")
-        print(".")
+        print("0 arguments.")
     elif num_args == 1:
         print("{} argument:".format(num_args))
         for idx, arg in enumerate(args, start=1):
