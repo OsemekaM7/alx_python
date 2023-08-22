@@ -6,7 +6,7 @@ def main():
     spec.loader.exec_module(module)
     
     if hasattr(module, 'a'):
-        print("Value of 'a':", module.a)
+        print(module.a)
     else:
         print("'a' not found in the imported module")
 
