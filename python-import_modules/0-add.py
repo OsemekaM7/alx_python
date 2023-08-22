@@ -1,4 +1,3 @@
-# main.py
 from add_0 import add
 
 def main():
