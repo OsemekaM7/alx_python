@@ -1,14 +1,8 @@
-import importlib.machinery
+import variable_load_2
 
 def main():
-    loader = importlib.machinery.SourceFileLoader("variable_load_2", "variable_load_2.py")
-    module = loader.load_module()
-    
-    if hasattr(module, 'a'):
-        a_value = getattr(module, 'a')
-        print(a_value)
-    else:
-        print("'a' not found in the imported module")
+    print(variable_load_2.a)  # Accessing the variable 'a' from the module
 
 if __name__ == "__main__":
     main()
+    
