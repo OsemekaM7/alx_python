@@ -2,13 +2,13 @@ def safe_print_division(a, b):
     try:
         result = a / b
     except ZeroDivisionError:
-        print("Inside result: None")
+        # print("Inside result: None")
         return None
     except Exception as e:
-        print("Inside result: None", e)
+        # print("Inside result: None", e)
         return None
     finally:
-        print("Inside result: {}".format(result) if 'result' in locals())
+        print("Inside result: {}".format(result) if 'result' in locals() else "Inside result: None")
 
     return result
 
