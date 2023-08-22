@@ -1,18 +1,16 @@
 def safe_print_division(a, b):
-    try:
+    if b == 0:
+        if a == 0:
+            print("Result: Indeterminate (0 / 0)")
+        else:
+            print("Inside result: None")
+        return None
+    else:
         result = a / b
-    except ZeroDivisionError:
-        print("Inside result: None")
-        return None
-    except Exception as e:
-        print("An error occurred:", e)
-        return None
-    finally:
-        print("Inside result: {}".format(result))
+        print("Inside result:", result)
         return result
-    # print(result)
 
 # Example usage
-# result = safe_print_division(10, 2)
+# result = safe_print_division(10, 0)
 # if result is not None:
 #     print("Result:", result)
