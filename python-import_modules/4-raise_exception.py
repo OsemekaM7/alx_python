@@ -1,4 +1,7 @@
 def raise_exception():
-    raise TypeError("This is a custom type error.")
+    try:
+        raise TypeError("This is a custom type error.")
+    except TypeError as e:
+        print("Exception has been raised:", e)
 
-print(raise_exception());
+# print(raise_exception());
