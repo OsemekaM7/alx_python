@@ -10,7 +10,7 @@ def safe_print_division(a, b):
     finally:
         print("Inside result: {}".format(result))
         return result
-    print(result)
+    # print(result)
 
 # Example usage
 # result = safe_print_division(10, 2)
