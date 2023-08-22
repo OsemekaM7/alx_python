@@ -13,4 +13,4 @@ def safe_print_division(a, b):
     return result
 
 # Example usage
-print (safe_print_division(10, 0))
+# print (safe_print_division(10, 0))
