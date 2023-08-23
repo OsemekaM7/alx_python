@@ -8,7 +8,7 @@ def best_score(a_dictionary):
     greater_keys = [key for key, value in a_dictionary.items() if value > first_value]
     
     if not greater_keys:
-        return first_value
+        return first_key
     
     best_key = max(greater_keys, key=lambda key: (a_dictionary[key], key))
     highest_score = a_dictionary[best_key]
