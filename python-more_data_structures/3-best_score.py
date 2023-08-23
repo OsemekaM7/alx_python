@@ -12,6 +12,6 @@ def best_score(a_dictionary):
     
     best_key = max(greater_keys, key=lambda key: (a_dictionary[key], key))
     highest_score = a_dictionary[best_key]
-    return highest_score
+    return best_key
 
-print (best_score({'Alex': 23, 'Ginny': 45, 'Georgina': 14}))
+# print (best_score({'Alex': 23, 'Ginny': 45, 'Georgina': 14}))
