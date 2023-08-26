@@ -5,14 +5,13 @@ def main():
 
     num_args = len(argv)
     if num_args == 0:
-        print("0 arguments")
-        print(".")
+        print("0 arguments.")
     else:
-        print("{} arguments".format(num_args))
+        print()
         if num_args == 1:
-            print("Argument:")
+            print("{} argument".format(num_args))
         else:
-            print("Arguments:")
+            print("{} arguments".format(num_args))
         
         for i, arg in enumerate(argv, start=1):
             print('{}: {}'.format(i, arg))
